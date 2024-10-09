@@ -7,6 +7,7 @@ def calculate(x):
     return lastArea
 
 x = float(input('Введите значение x: '))
-print('Значение должно быть положительным')
+if x < 0:
+    exit('Значение должно быть больше нуля')    
 lastArea = calculate(x)
 print(f'Разница между S квадрата и S вписанного круга = {lastArea}')
